@@ -1,0 +1,53 @@
+
+:root{
+    --btn-primary: #fa9945;
+    --btn--danger:#fa4545;
+    --white:#fff;
+    --grayText: #333;
+    --disabledText: #B3B3B3;
+    --disabledColor:#d4d4d4;
+}
+#app{
+    display:flex;
+    gap: 1rem;
+}
+.btn{
+    width: 128px;
+    height: 32px;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+}
+
+.btn.primary{
+    color: var(--white);
+    background-color: var(--btn-primary);
+}
+
+.btn.primary:hover,
+.btn.primary:active{
+   color: var(--btn-primary);
+   background-color: var(--white);
+   border: 2px solid var(--btn-primary);
+}
+/* hover, click, disabled */
+
+.btn.danger{
+    color:var(--white);
+    background-color: var(--btn--danger);
+}
+.btn.danger:hover,
+.btn.danger:active{
+    color: var(--btn--danger);
+    background-color: var(--white);
+    border: 2px solid var(--btn--danger);
+}
+
+.btn.danger.true,
+.btn.primary.true{
+    color: var(--disabledText);
+    background-color: var(--disabledColor);
+    cursor:default;
+    border:none
+}
+
